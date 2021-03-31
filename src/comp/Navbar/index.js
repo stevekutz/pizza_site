@@ -3,7 +3,7 @@ import {Nav, NavIcon, NavLink, Bars} from './NavbarElements';
 
 const Navbar = () => {
     return (
-        <>
+        
             <Nav>  
             
                 <NavLink to = '/'> Pizza </NavLink> 
@@ -13,7 +13,7 @@ const Navbar = () => {
                 </NavIcon>
             </Nav>
         
-        </>
+        
     
     )
 
