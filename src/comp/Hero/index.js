@@ -17,6 +17,13 @@ const Hero = () => {
     return (
         <HeroContainer>
             <Navbar />
+            <HeroContent>
+                <HeroItems>
+                    <HeroH1> Great Pizza Served Here! </HeroH1>
+                    <HeroBtn> Place Order! </HeroBtn>
+                
+                </HeroItems>
+            </HeroContent>
         </HeroContainer>
     );
 
