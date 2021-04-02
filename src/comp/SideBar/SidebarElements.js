@@ -18,7 +18,8 @@ import { FaTimes } from 'react-icons/fa';
 //   }
 // `;
 
-export const SidebarContainer = styled.aside`
+// export const SidebarContainer = styled.div`
+export const SidebarContainer = styled.div`
     position: fixed;
     z-index: 999;
     width: 350px;
@@ -29,7 +30,7 @@ export const SidebarContainer = styled.aside`
     top: 0;
     transition: 0.3s ease-in-out;
     right: ${ ({ isOpen }) => (isOpen ? '0' : '-1000px')};
-    
+
     @media screen and (max-width: 400px) {
         width: 100%;
     }

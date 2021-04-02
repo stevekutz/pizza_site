@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     font-weight: 700;
-    // z-index: 1;
+    z-index: 1;
 `
 
 export const NavLink = styled(Link)`
@@ -22,7 +22,7 @@ export const NavLink = styled(Link)`
     align-items: center;
     text-decoration: none;
     cursor: pointer;
-    // z-index: 5;
+    z-index: 5;
 
     @media screen and (max-width: 400px) {
         position: absolute;
