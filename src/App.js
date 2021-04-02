@@ -3,6 +3,7 @@
 
 
 import Hero from './comp/Hero';
+import Products from './comp/Products';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {GlobalStyle} from './globalStyles';
 
@@ -12,7 +13,7 @@ function App() {
     <Router>
         <GlobalStyle />
         <Hero />
-
+        <Products />
     </Router>
   );
 }

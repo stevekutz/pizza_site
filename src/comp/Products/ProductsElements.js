@@ -1,4 +1,4 @@
-import styled from 'styled-comnponents';
+import styled from 'styled-components';
 
 export const ProductsContainer = styled.div`
     min-height: 100vh;
@@ -26,7 +26,7 @@ export const ProductCard = styled.div`
 
 `;
 
-export const ProductImage = style.img`
+export const ProductImage = styled.img`
     height: 300px;
     min-width: 300px;
     max-width: 100%;
