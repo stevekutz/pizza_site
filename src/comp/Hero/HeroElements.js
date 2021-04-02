@@ -31,6 +31,7 @@ export const HeroItems =  styled.div`
     max-height: 100%;
     padding: 0 2rem;
     width: 650px;
+    // width: 70%;
     color: #fff;
     text-transform: uppercase;
     line-height: 1;
@@ -45,29 +46,30 @@ export const HeroItems =  styled.div`
 export const HeroH1 = styled.h1`
     // clamp linearly scales 'preferred' between min & max
     // clamp(min, preferred, max)
-    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
     margin-bottom: 1rem;
     box-shadow: 3px 5px #e9ba23;
-    letter-spacing: 3px;
-
+    letter-spacing: 3px;  // horz spacing, - reduces spacing, + spreads apart
+    padding: 0 4px;
 `;
 
 export const HeroP = styled.p`
     font-size: clamp(2rem, 2.5 vw, 3rem);
     margin-bottom: 2rem;
-
+    padding: 0 4px;
 `;
+
 export const HeroBtn = styled.button`
     font-size: 1.4rem;
     padding: 1rem 4rem;
     border: none;
     background: #e31837;
     color: #fff;
-    transition: 0.2s ease-out;
+    transition: 0.5s ease-out;
 
     &:hover{
         background: #ffc500;
-        transition: 0.2 ease-out;
+        // transition: 0.2 ease-out;  // no effect
         cursor: pointer;
         color: #000;
     }
