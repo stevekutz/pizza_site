@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
     
     height: 100vh;
     background-position: center;
-    ßbackground-size: cover;
+    background-size: cover;
 `;
 
 export const HeroContent = styled.div`

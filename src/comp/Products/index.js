@@ -14,16 +14,27 @@ import {
 
 } from './ProductsElements';
 
-const Products = () => {
+const Products = ({heading, data}) => {
 
     return(
         <ProductsContainer>
-            <ProductsHeading>
+            <ProductsHeading> {heading} </ProductsHeading>
             <ProductWrapper>
-                Products
+                {data.map((product, index) => {
+                    return (
+                        <ProductCard key = {index}>
+                            <ProductImage src = {product.img} alt = {product.alt}/>
+                            <ProductInfo>
+                                <ProductTitle> {product.name} </ProductTitle>
+                                <ProductDesc> {product.desc} </ProductDesc>
+                                <ProductPrice> {product.pricce} </ProductPrice>
+                                <ProductButton> Add to Order </ProductButton>
+                            </ProductInfo>
+                        </ProductCard>
+                    )
+                })}
             
             </ProductWrapper>
-            </ProductsHeading>
         </ProductsContainer>
     )
 
