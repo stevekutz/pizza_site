@@ -7,6 +7,7 @@ import {
     ProductTitle,
     ProductCard,
     ProductImage,
+    ImageContainer,
     ProductInfo,
     ProductDesc,
     ProductPrice,
@@ -23,7 +24,10 @@ const Products = ({heading, data}) => {
                 {data.map((product, index) => {
                     return (
                         <ProductCard key = {index}>
-                            <ProductImage src = {product.img} alt = {product.alt}/>
+                            <ImageContainer>
+                                <ProductImage src = {product.img} alt = {product.alt}/>
+                            
+                            </ImageContainer>
                             <ProductInfo>
                                 <ProductTitle> {product.name} </ProductTitle>
                                 <ProductDesc> {product.desc} </ProductDesc>
