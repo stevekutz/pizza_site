@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProductsContainer = styled.div`
     min-height: 100vh;
     padding: 5rem calc((100vw - 1300px)/2);
-    // background: #150f0f;
+    background: #150f0f;
     color: #fff;
 
 
@@ -32,8 +32,8 @@ export const ImageContainer = styled.div`
     // border-color: transparent #fdc500 #fdc500 transparent;
     // outline: 0.5rem solid red;
     // outline-offset: 0.0rem;
-    // border-right: 8px solid #fdc500;
-    // border-bottom: 8px solid #fdc500;
+    border-right: 8px solid #fdc500;
+    border-bottom: 8px solid #fdc500;
     // border-right: 8px solid red;
     // border-bottom: 8px solid red;
     // box-shadow: 8px 8px #fdc500;
@@ -42,6 +42,7 @@ export const ImageContainer = styled.div`
     // width: 100%;
     // height: 298px;
     display: flex;
+    align-content: center;
 `;
 
 
