@@ -11,10 +11,18 @@ import {
 } from './SidebarElements';
 
 
-const Sidebar = ({ isOpen, toggleSideMenu }) => {
- 
+// const Sidebar = ({ isOpen, toggleSideMenu }) => {
+// const Sidebar = (props) => { 
+
+function Sidebar(props){
+// <SidebarContainer isOpen = {isOpen} onClick = {toggleSideMenu}>
+
     return (
-        <SidebarContainer isOpen = {isOpen} onClick = {toggleSideMenu}>
+        <SidebarContainer 
+            isOpen = {props.isOpen} 
+            onClick = {props.toggleSideMenu} 
+            
+        >
             <Icon>
                 <CloseIcon />
             </Icon>

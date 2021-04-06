@@ -47,7 +47,7 @@ const Footer = () => {
                             <FaLinkedin />
                         </SocialIconLink> 
                     </SocialIcons>
-                </SocialMediaWrap>
+                                                                    </SocialMediaWrap>
                 
                 </SocialMedia>
             
