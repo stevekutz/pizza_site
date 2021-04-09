@@ -3,11 +3,10 @@ import {Nav, NavIcon, NavLink, Bars} from './NavbarElements';
 
 const Navbar = ({toggleSideMenu}) => {
     return (
-        
-            <Nav>  
-            
+
+            <Nav onClick = {toggleSideMenu}>
                 <NavLink to = '/'> Pizza </NavLink> 
-                <NavIcon onClick = {toggleSideMenu}>
+                <NavIcon>
                     <p> Menu </p>
                     <Bars />
                 </NavIcon>
@@ -21,3 +20,5 @@ const Navbar = ({toggleSideMenu}) => {
 }
 
 export default Navbar;
+
+// <Nav onClick = {toggleSideMenu}></Nav>

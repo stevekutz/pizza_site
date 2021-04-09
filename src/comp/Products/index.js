@@ -31,7 +31,7 @@ const Products = ({heading, data}) => {
                             <ProductInfo>
                                 <ProductTitle> {product.name} </ProductTitle>
                                 <ProductDesc> {product.desc} </ProductDesc>
-                                <ProductPrice> {product.pricce} </ProductPrice>
+                                <ProductPrice> {product.price} </ProductPrice>
                                 <ProductButton> Add to Order </ProductButton>
                             </ProductInfo>
                         </ProductCard>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import onClickOutside from 'react-onclickoutside';
+// import onClickOutside from 'react-onclickoutside';
 import Navbar from '../Navbar';
 import Sidebar from '../SideBar';
 import {
@@ -26,10 +26,10 @@ function Hero(){
         setIsOpen(!isOpen);
     }
 
-    Hero.handleClickOutside = () => {
-        // setIsOpen(true);
-        toggleSideMenu();
-    }
+    // Hero.handleClickOutside = () => {
+    //     setIsOpen(true);
+    //     // toggleSideMenu();
+    // }
 
     return (
         <HeroContainer>
@@ -39,9 +39,11 @@ function Hero(){
             <Sidebar 
                 isOpen = {isOpen}
                 toggleSideMenu = {toggleSideMenu}
-
+                setIsOpen = {setIsOpen}
             />
-            <HeroContent>
+            <HeroContent
+                // onClick = {toggleSideMenu}
+            >
                 <HeroItems>
                     <HeroH1> Great Pizza Served Here! </HeroH1>
                     <HeroP> Free Delivery </HeroP>
@@ -55,11 +57,11 @@ function Hero(){
 
 };
 
-const clickOutsideConfig = {
-    handleClickOutside: () => Hero.handleClickOutside,
+// const clickOutsideConfig = {
+//     handleClickOutside: () => Hero.handleClickOutside,
 
-};
+// };
 
 
-// export default Hero;
-export default onClickOutside(Hero, clickOutsideConfig);
+export default Hero;
+// export default onClickOutside(Hero, clickOutsideConfig);

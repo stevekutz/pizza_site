@@ -4,13 +4,13 @@ import {FaPizzaSlice} from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: transparent;
+    // background: pink;
     border: 1px solid black;
-    // background: deeppink;
     height: 80px;
     display: flex;
     justify-content: center;
     font-weight: 700;
-    z-index: 1;
+    z-index: 0;
 `
 
 export const NavLink = styled(Link)`
@@ -22,7 +22,7 @@ export const NavLink = styled(Link)`
     align-items: center;
     text-decoration: none;
     cursor: pointer;
-    z-index: 5;
+    // z-index: 0;
 
     @media screen and (max-width: 400px) {
         position: absolute;

@@ -13,13 +13,16 @@ export const HeroContainer = styled.div`
     height: 100vh;
     background-position: center;
     background-size: cover;
+    // z-index: 10;
 `;
 
 export const HeroContent = styled.div`
     height: calc(100vh - 80px);  // because NavBar is 80px
-    max-height: 100%;
+    // max-height: 100%;
+    max-hwight: 50%;
     padding: 0 calc((100vw - 1300px) / 2);  // centers content
-
+    // z-index: 0;
+    // cursor: pointer;
 `;
 
 export const HeroItems =  styled.div`

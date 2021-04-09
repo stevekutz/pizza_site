@@ -9,7 +9,7 @@ import {
     SideBtnWrap,
 
 } from './SidebarElements';
-
+import onClickOutside from 'react-onclickoutside';
 
 // const Sidebar = ({ isOpen, toggleSideMenu }) => {
 // const Sidebar = (props) => { 
@@ -17,11 +17,17 @@ import {
 function Sidebar(props){
 // <SidebarContainer isOpen = {isOpen} onClick = {toggleSideMenu}>
 
+    // Sidebar.handleClickOutside = () => {
+    //     props.setIsOpen(!true);
+    //     props.toggleSideMenu();
+    // }
+
+
     return (
         <SidebarContainer 
             isOpen = {props.isOpen} 
             onClick = {props.toggleSideMenu} 
-            
+            // onTouchMove   = {props.toggleSideMenu}
         >
             <Icon>
                 <CloseIcon />
@@ -41,4 +47,10 @@ function Sidebar(props){
  
  }
 
- export default Sidebar;
+// const clickOutsideConfig = {
+//     handleClickOutside: () => Sidebar.handleClickOutside,
+// }
+
+
+// export default onClickOutside(Sidebar, clickOutsideConfig)
+export default Sidebar;
